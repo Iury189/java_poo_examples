@@ -13,8 +13,7 @@ public class Classe {
             dobrador[i].setNome(teclado.nextLine());
             System.out.print("Digite o elemento do " + (i + 1) + "° dobrador: ");
             dobrador[i].setElemento(teclado.nextLine());
-            System.out.println("");
-            
+            System.out.println("");         
         }
         // Laço para exibir os resultados
         for (int i = 0; i < dobrador.length; i++) {
