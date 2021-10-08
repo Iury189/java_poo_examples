@@ -1,5 +1,4 @@
 package classe;
-import javax.swing.JOptionPane;
 
 public class Dobrador {
     
@@ -14,6 +13,6 @@ public class Dobrador {
     public void setElemento(String elemento) { this.elemento = elemento; }
     
     public void Interacao(){
-        System.out.println("Meu nome é " + this.getNome() + " e o elemento que domino é " + this.getElemento());
+        System.out.println("Meu nome é " + this.getNome() + " e o elemento que domino é " + this.getElemento() + ".");
     }
 }
