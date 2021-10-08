@@ -14,6 +14,6 @@ public class Dobrador {
     public void setElemento(String elemento) { this.elemento = elemento; }
     
     public void Interacao(){
-        JOptionPane.showMessageDialog(null, "Meu nome é " + this.getNome() + " e o elemento que domino é " + this.getElemento(), "Mensagem", JOptionPane.INFORMATION_MESSAGE);
+        System.out.println("Meu nome é " + this.getNome() + " e o elemento que domino é " + this.getElemento());
     }
 }
