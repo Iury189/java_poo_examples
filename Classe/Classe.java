@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Classe {
     public static void main(String[] args) {
+        // Habilitar captura de teclado do usuário
         Scanner teclado = new Scanner(System.in);
         // Matriz de objetos da classe Dobrador
         Dobrador[] dobrador = new Dobrador[2];
