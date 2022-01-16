@@ -4,6 +4,18 @@ public class JoJo {
     
     private String nome, stand;
     private boolean status_stand = false;
+    
+    public String getNome() { return nome; }
+
+    public void setNome(String nome) { this.nome = nome; }
+
+    public String getStand() { return stand; }
+
+    public void setStand(String stand) { this.stand = stand; }
+
+    public boolean isStatus_stand() { return status_stand; }
+
+    public void setStatus_stand(boolean status_stand) { this.status_stand = status_stand; } 
 
     public void AtivarStand(){
         if (status_stand){
@@ -33,16 +45,4 @@ public class JoJo {
             DesativarStand();
         }
     }
-    
-    public String getNome() { return nome; }
-
-    public void setNome(String nome) { this.nome = nome; }
-
-    public String getStand() { return stand; }
-
-    public void setStand(String stand) { this.stand = stand; }
-
-    public boolean isStatus_stand() { return status_stand; }
-
-    public void setStatus_stand(boolean status_stand) { this.status_stand = status_stand; } 
 }
