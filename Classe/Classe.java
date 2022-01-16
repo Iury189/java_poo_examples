@@ -2,23 +2,30 @@ package classe;
 import java.util.Scanner;
 
 public class Classe {
+
     public static void main(String[] args) {
-        // Habilitar captura de teclado do usuário
         Scanner teclado = new Scanner(System.in);
-        // Matriz de objetos da classe Dobrador
-        Dobrador[] dobrador = new Dobrador[2];
-        // Laço que vai coletar os elementos
-        for (int i = 0; i < dobrador.length; i++) {
-            dobrador[i] = new Dobrador();
-            System.out.print("Digite o nome do " + (i + 1) + "° dobrador: ");
-            dobrador[i].setNome(teclado.nextLine());
-            System.out.print("Digite o elemento do " + (i + 1) + "° dobrador: ");
-            dobrador[i].setElemento(teclado.nextLine());
-            System.out.println("");         
+        JoJo j1 = new JoJo();
+        while(true){
+            System.out.print("Digite seu nome: ");
+            String j1_nome = teclado.nextLine();
+            if (j1_nome.isEmpty()){
+                System.out.print("O nome não pode ficar vazio, refaça corretamente a operação.\n");
+            } else {
+                j1.setNome(teclado.nextLine());
+                break;
+            }       
         }
-        // Laço para exibir os resultados
-        for (int i = 0; i < dobrador.length; i++) {
-            dobrador[i].Interacao();
+        while(true){
+            System.out.print("Digite o stand de " + j1.getNome() + ": ");
+            String j1_stand = teclado.nextLine();
+            if (j1_stand.isEmpty()){
+                System.out.print("O stand de " + j1.getNome() + " não pode ficar vazio, refaça corretamente a operação.\n");   
+            } else {
+                j1.setStand(teclado.nextLine());
+                break;
+            }  
         }
+        j1.Interacao();
     }
 }
