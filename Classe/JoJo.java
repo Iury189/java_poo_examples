@@ -18,7 +18,7 @@ public class JoJo {
     public void setStatus_stand(boolean status_stand) { this.status_stand = status_stand; } 
 
     public void AtivarStand(){
-        if (status_stand){
+        if (this.isStatus_stand()){
            System.out.println(this.getStand() + " já está invocado.");
         } else {
            this.setStatus_stand(true);
@@ -27,11 +27,11 @@ public class JoJo {
     }
     
     public void DesativarStand(){
-        if (status_stand == false){
+        if (this.isStatus_stand() == false){
            System.out.println(this.getStand() + " já está oculto.");
         } else {
            this.setStatus_stand(false);
-           System.out.println(this.getStand() + " foi ocultado");
+           System.out.println(this.getStand() + " foi ocultado.");
         } 
     }
     
