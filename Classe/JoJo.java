@@ -39,7 +39,7 @@ public class JoJo {
         System.out.println("Nome: " + this.getNome());
         System.out.println("Stand: " + this.getStand());
         System.out.println("Status do stand: " + (this.isStatus_stand() ? "Ativo" : "Inativo"));
-        if (this.isStatus_stand() == true){
+        if (this.isStatus_stand()){
             AtivarStand();
         } else {
             DesativarStand();
