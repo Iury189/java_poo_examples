@@ -17,7 +17,7 @@ public class JoJo {
 
     public void setStatus_stand(boolean status_stand) { this.status_stand = status_stand; } 
 
-    public void AtivarStand(){
+    public void ativarStand(){
         if (this.isStatus_stand()){
            System.out.println(this.getStand() + " já está invocado.");
         } else {
@@ -26,7 +26,7 @@ public class JoJo {
         } 
     }
     
-    public void DesativarStand(){
+    public void desativarStand(){
         if (this.isStatus_stand() == false){
            System.out.println(this.getStand() + " já está oculto.");
         } else {
@@ -35,14 +35,15 @@ public class JoJo {
         } 
     }
     
-    public void Interacao(){
+    public void interacao(){
         System.out.println("Nome: " + this.getNome());
         System.out.println("Stand: " + this.getStand());
         System.out.println("Status do stand: " + (this.isStatus_stand() ? "Ativo" : "Inativo"));
         if (this.isStatus_stand()){
-            AtivarStand();
+            ativarStand();
         } else {
-            DesativarStand();
+            desativarStand();
         }
     }
+    
 }
