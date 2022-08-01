@@ -7,7 +7,7 @@ import java.time.format.DateTimeFormatter;
 public class Moto extends Veiculo {
     
     @Override
-    public void Caracteristicas(){
+    public void caracteristicas() {
         String formato_real = NumberFormat.getCurrencyInstance().format(this.getValor());
         DateTimeFormatter data = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         ZoneId zona = ZoneId.systemDefault(); 

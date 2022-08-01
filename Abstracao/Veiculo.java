@@ -26,5 +26,6 @@ public abstract class Veiculo {
 
     public void setValor(double valor) { this.valor = valor; }
 
-    public abstract void Caracteristicas();
+    public abstract void caracteristicas();
+    
 }
