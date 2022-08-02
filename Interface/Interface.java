@@ -7,10 +7,10 @@ public class Interface {
         Sapo sapo = new Sapo();
         Aguia aguia = new Aguia();
         
-        coelho.Fugir();
-        sapo.Fugir();
-        sapo.Cacar();
-        aguia.Cacar();
+        coelho.fugir();
+        sapo.fugir();
+        sapo.cacar();
+        aguia.cacar();
         
     }
     
